@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Skill from "../components/Skill";
 
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             
             <Banner></Banner>
+            <Skill></Skill>
         </div>
     );
 };
