@@ -5,10 +5,10 @@ import { CgPerformance } from "react-icons/cg";
 
 const Experience = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-950 to-gray-800 mt-10 my-5">
-            <h1 className="uppercase text-4xl text-center font-semibold text-green-600">My Services</h1>
-            <h4 className="text-lg font-medium text-center my-5">Crafting Responsive Interfaces, Optimizing Performance, Ensuring Accessible & Seamless Websites.</h4>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="bg-gradient-to-r from-blue-950 to-gray-800 mt-10 my-5 space-y-10 h-[500px]">
+            <h1 className="uppercase text-4xl text-center font-semibold text-green-500 mt-20">My Services</h1>
+            <h4 className="text-lg font-medium text-center my-5 ">Crafting Responsive Interfaces, Optimizing Performance, <br /> Ensuring Accessible & Seamless Websites.</h4>
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-5 ">
                 <div className="border-b-4 border-t-4 border-gray-400 p-3 rounded-md">
                     <div className="flex items-center gap-3">
                         <h2 className="text-lg font-medium text-green-400">Front-End Development Expertise </h2> <FaConnectdevelop></FaConnectdevelop>

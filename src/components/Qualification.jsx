@@ -1,6 +1,6 @@
 const Qualification = () => {
     return (
-        <div className="mt-10">
+        <div className="mt-20 mb-10">
             <h1 className="text-3xl text-green-500 font-semibold text-center">My Academic Qualification</h1>
             <ul className="timeline timeline-vertical mt-10">
                 <li>
