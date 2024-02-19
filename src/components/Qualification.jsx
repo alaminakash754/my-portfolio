@@ -1,7 +1,7 @@
 const Qualification = () => {
     return (
-        <div className="mt-20 mb-10">
-            <h1 className="text-3xl text-green-500 font-semibold text-center">My Academic Qualification</h1>
+        <div className="h-[400px]  mb-10">
+            <h1 className="text-3xl mt-24 text-green-500 font-semibold text-center">My Academic Qualification</h1>
             <ul className="timeline timeline-vertical mt-10">
                 <li>
                     <div className="timeline-start timeline-box border-green-700">B.Sc. in Computer Science & Engineering <br />

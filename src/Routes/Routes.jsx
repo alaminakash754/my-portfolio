@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import AutoZone from "../Pages/AutoZone/AutoZone";
 import BookProject from "../Pages/BookProject/BookProject";
 import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/about/About";
 
 export const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
         {
           path:'/contact',
           element: <Contact></Contact>
+        },
+        {
+          path: 'about',
+          element: <About></About>
         }
       ]
     },
