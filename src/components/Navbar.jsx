@@ -7,6 +7,7 @@ const Navbar = () => {
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? " font-bold text-lg text-green-400 hover:bg-gray-200 hover:text-green-400 " : ""
             }>Home</NavLink></li>
+            
         <li><NavLink to="/projects"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? " font-bold  text-lg text-green-400 hover:bg-gray-200 hover:text-green-400  " : ""

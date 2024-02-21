@@ -4,10 +4,11 @@ import resume from '../assets/personal branding.pdf'
 import { FaArrowRight } from 'react-icons/fa';
 import './button/Button.css'
 import { Link } from 'react-router-dom';
+import '../style/style.css'
 
 const Banner = () => {
     return (
-        <div className="bg-gradient-to-r from-black to-blue-950 grid sm:grid-cols-1 md:grid-cols-2  gap-10 h-[500px] p-6">
+        <div className=" grid sm:grid-cols-1 md:grid-cols-2  gap-10 h-[500px] p-6">
             <div className=" ml-5">
                 <h1 className="text-5xl">Hi, I'm Alamin!</h1>
 
@@ -17,7 +18,11 @@ const Banner = () => {
                 <Link to='about'><button className="button"> <span className="button__icon"><FaArrowRight className="mt-5 ml-5" /></span> <span>More About me</span>  </button></Link>
             </div>
             <div className="ml-14">
-                <img className='rounded-full w-[400px] h-[400px] ' src={coverPhoto} alt="" />
+                <div className='box'>
+                    <div className='content'>
+                        <img src={coverPhoto} alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     );
