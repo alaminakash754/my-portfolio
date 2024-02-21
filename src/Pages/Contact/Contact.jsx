@@ -28,7 +28,7 @@ const Contact = () => {
                     <BsTelephoneOutboundFill className='text-3xl text-green-500'></BsTelephoneOutboundFill>
                     <div>
                         <h2>Lets Talk Me</h2>
-                        <p>0218324</p>
+                        <p>+8801686239754</p>
                     </div>
                 </div>
                 <div className='flex items-center justify-center gap-10'>

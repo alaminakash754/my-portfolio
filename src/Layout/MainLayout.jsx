@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-// import ParticleBg from "../components/ParticleBg";
+import ParticleBg from "../components/ParticleBg";
 
 
 
@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 const MainLayout = () => {
     return (
         <div className="max-w-[1160px] mx-auto space-y-3">
-          {/* <ParticleBg></ParticleBg> */}
+          <ParticleBg></ParticleBg>
             <Navbar></Navbar>
             <Outlet></Outlet>
         </div>

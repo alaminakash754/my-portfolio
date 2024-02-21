@@ -21,6 +21,8 @@ const Banner = () => {
                 <div className='box'>
                     <div className='content'>
                         <img src={coverPhoto} alt="" />
+                        <h2>Designing interfaces <br /> <span>coding with flair</span> </h2>
+                        <a href="contact">Hire Me</a>
                     </div>
                 </div>
             </div>
