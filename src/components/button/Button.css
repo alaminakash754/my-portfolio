@@ -29,7 +29,6 @@
   
   .button:hover::before {
     transform: translateX(0);
-    left: 100%;
   }
   
   .button__icon {
