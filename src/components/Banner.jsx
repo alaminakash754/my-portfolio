@@ -8,8 +8,8 @@ import '../style/style.css'
 
 const Banner = () => {
     return (
-        <div className=" grid sm:grid-cols-1 md:grid-cols-2  gap-10 h-[500px] p-6">
-             <div className="ml-14">
+        <div className=" grid sm:grid-cols-1 md:grid-cols-2  gap- h-[500px] p-6">
+             <div className="ml-4">
                 <div className='box'>
                     <div className='content'>
                         <img src={coverPhoto} alt="" />
@@ -18,7 +18,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className=" ml-5">
+            <div className=" pr-6">
                 <h1 className="text-5xl">Hi, I'm Alamin!</h1>
 
                 <p className='mt-10 text-justify font-semibold text-lg'>Welcome to my portfolio! I specialize in crafting immersive user experiences as a front-end developer. With a passion for clean code and innovative design, I bring concepts to life using HTML, CSS, and JavaScript. Proficient in frameworks like React and Vite, I strive to create responsive and visually stunning interfaces that elevate user engagement and satisfaction.</p>

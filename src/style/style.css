@@ -119,27 +119,32 @@
 
 .nav_menu{
 right: 0;
-top: 50%;
+top: 35%;
 position: fixed;
 height: 200px;
 border-radius: 20%;
 border: 2px solid #6c5ce7;
 z-index: 100;
+
 }
 .nav_menu ul{
-    
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     padding: 5px;
     column-gap: 10px;
 }
 
 .nav_menu ul li {
-    column-gap: 10px;
+    margin-top: 10px;
+    width: 100%;
     background-color: #00ccff;
     color: black;
+    border-radius: 24px;
 
 }
 .nav_menu ul li:hover{
     background-color: #d400d4;
     color: #fff;
+
 }

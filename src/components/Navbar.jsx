@@ -4,14 +4,14 @@ import '../style/style.css';
 // import logo from '../assets/logo.jpg'
 
 const Navbar = () => {
-    
+
 
     // const navLinks = <>
     //     <li><NavLink to="/"
     //         className={({ isActive, isPending }) =>
     //             isPending ? "pending" : isActive ? " font-bold text-lg text-green-400 hover:bg-gray-200 hover:text-green-400 " : " hover:text-green-400"
     //         }>Home</NavLink></li>
-            
+
     //     <li><NavLink to="/projects"
     //         className={({ isActive, isPending }) =>
     //             isPending ? "pending" : isActive ? " font-bold  text-lg text-green-400 hover:bg-gray-200 hover:text-green-400  " : " hover:text-green-400"
@@ -59,9 +59,10 @@ const Navbar = () => {
                 <Link to='/'><li>Home</li></Link>
                 <Link to='projects'><li>My Projects</li></Link>
                 <Link to='contact'><li>Contact</li></Link>
-                
+
             </ul>
         </nav>
+       
     );
 };
 
