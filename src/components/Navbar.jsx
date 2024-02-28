@@ -1,9 +1,14 @@
 // import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import '../style/style.css';
-// import logo from '../assets/logo.jpg'
-
+// import logo fom '../assets/logo.jpg'
 const Navbar = () => {
+    const navLink = document.querySelectorAll('.nav__link')
+
+function linkColor(){
+    navLink.forEach(link => link.classList.remove('active-link'))
+    this.classList.add('active-link')
+}
+navLink.forEach(link => link.addEventListener('click', linkColor))
 
 
     // const navLinks = <>
@@ -54,15 +59,38 @@ const Navbar = () => {
         //         </div>
         //     </div>
         // </div>
-        <nav className='nav_menu'>
-            <ul>
-                <Link to='/'><li>Home</li></Link>
-                <Link to='projects'><li>My Projects</li></Link>
-                <Link to='contact'><li>Contact</li></Link>
+        <nav className="nav">
+            <ul className="nav__list">
+                <a href="#" className="nav__link active-link">
+
+                    <span className="nav__name">Home</span>
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+
+                <a href="#" className="nav__link">
+
+                    <span className="nav__name">More About me</span>
+                    <ion-icon name="receipt-outline"></ion-icon>
+                </a>
+
+                <a href="#" className="nav__link">
+
+
+                    <span className="nav__name">Contact</span>
+                    <ion-icon name="mail-unread-outline"></ion-icon>
+                </a>
+
+                <a href="#" className="nav__link">
+
+                    <span className="nav__name">My Projects</span>
+                    <ion-icon name="medkit-outline"></ion-icon>
+                </a>
 
             </ul>
+
+            
         </nav>
-       
+
     );
 };
 

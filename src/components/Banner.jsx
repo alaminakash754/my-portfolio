@@ -14,7 +14,7 @@ const Banner = () => {
                     <div className='content'>
                         <img src={coverPhoto} alt="" />
                         <h2>Designing interfaces <br /> <span>coding with flair</span> </h2>
-                        <a href="contact">Hire Me</a>
+                        <Link to='contact'><p>Hire Me</p></Link>
                     </div>
                 </div>
             </div>
