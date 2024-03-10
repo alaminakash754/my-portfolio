@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
     color: #fff;
-    border: 1px solid cyan;
+    border: 1px solid #a55eea;
     padding: 15px 35px 15px 70px;
     border-radius: 35px;
     font-family: var(--second-font);
@@ -21,7 +21,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-color: cyan;
+    background-color: #a55eea;
     transform: translateX(-100%) ;
     z-index: -1;
     transition: all 0.5s ease-out;
@@ -32,7 +32,7 @@
   }
   
   .button__icon {
-    background-color: cyan;
+    background-color: #a55eea;
     position: absolute;
     inset-block: -1px;
     left: 0;

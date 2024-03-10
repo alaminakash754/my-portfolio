@@ -5,6 +5,7 @@
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 .box::before {
@@ -140,7 +141,7 @@ main {
 
 .nav__list {
     position: relative;
-    background-color: #6c5ce7;
+    background-color: #a55eea;
     padding-block: 70px;
     border-radius:  50px ;
     display: grid;
@@ -163,27 +164,32 @@ main {
   }
   .nav__link:hover .nav__name {
     opacity: 1;
-    transform: translateX(-48px);
+    transform: translateX(-100px);
   }
   
   .nav__name {
     position: absolute;
     top: 0;
-    transform: translateX(-90px);
+    transform: translateX(-170px);
     background-color:blue;
     color: white;
     font-size: 16px;
     font-weight: 400;
     display: inline-block;
-  
+    width: 120px;
+   height: 30px;
     border-radius: 3rem;
     pointer-events: none;
     transition: transform 0.5s, opacity 0.5s;
     opacity: 0;
+    text-align: center;
   }
   .active-link {
     background-color: white;
   }
+  
+
+
   .active-link i {
     color: blue;
   }

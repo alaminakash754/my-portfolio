@@ -1,7 +1,5 @@
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import Projects from "../components/Projects";
-import Contact from "./Contact/Contact";
+
+import MyDetails from "../components/MyDetails";
 
 
 
@@ -9,12 +7,11 @@ import Contact from "./Contact/Contact";
 const Home = () => {
     return (
 
-        <div>
+        <div className="top-10">
 
-            <Banner></Banner>
-            <Projects></Projects>
-            <Contact></Contact>
-            <Footer></Footer>
+            
+            <MyDetails></MyDetails>
+          
 
         </div>
 

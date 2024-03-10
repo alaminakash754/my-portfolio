@@ -5,7 +5,7 @@ import { MdMarkEmailRead } from "react-icons/md";
 const Contact = () => {
     return (
         <div>
-            <div className="contact bg-fixed">
+            <div className="contact bg-fixed w-[650px]">
 
                 <div className='justify-center items-center p-36 mt-20 bg-slate-500 opacity-70 text-center mx-auto'>
                     <h2 className='text-3xl mb-10 text-green-500 font-semibold text-center uppercase'>My Newsletter</h2>
