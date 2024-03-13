@@ -7,7 +7,7 @@ const MyDetails = () => {
     return (
 
         <div className="w-[650px] mt-16">
-            <h1 className="text-5xl">Hi, I'm Alamin!</h1>
+            <h1 className="text-5xl">Hi, I'm Alamin <span className='text-[#a55eea]'>!!!</span> </h1>
 
             <p className='mt-10 text-justify font-semibold text-lg'>Welcome to my portfolio! I specialize in crafting immersive user experiences as a front-end developer. With a passion for clean code and innovative design, I bring concepts to life using HTML, CSS, and JavaScript. Proficient in frameworks like React and Vite, I strive to create responsive and visually stunning interfaces that elevate user engagement and satisfaction.</p>
            

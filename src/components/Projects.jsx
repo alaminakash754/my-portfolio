@@ -3,7 +3,7 @@ import coverBook from '../assets/book project1.jpg'
 const Projects = () => {
     return (
         <div className='mt-10 w-[650px]'>
-            <h1 className=' text-3xl text-green-500 font-semibold text-center uppercase'>My Projects</h1>
+            <h1 className=' text-3xl text-[#a55eea] font-semibold text-center uppercase'>My Projects</h1>
             <div>
                 <div className="card lg:card-side bg-base-100 shadow-xl mx-auto  mt-10">
                     <figure><img className='w-[300px] h-[270px] rounded-lg' src={coverProject} alt="Album" /></figure>

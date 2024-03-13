@@ -91,7 +91,7 @@
     position: relative;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #fff;
+    background: #a55eea;
     color: #070a1c;
     border-radius: 25px;
     font-weight: 500;
@@ -159,25 +159,26 @@ main {
   }
   .nav__link i {
     font-size: 1.25rem;
-    color: var(--white-color);
+    color: white;
     transition: color 0.4s;
   }
   .nav__link:hover .nav__name {
-    opacity: 1;
-    transform: translateX(-100px);
+    opacity: 20;
+    transform: translateX(-98px);
   }
   
   .nav__name {
     position: absolute;
     top: 0;
-    transform: translateX(-170px);
-    background-color:blue;
+    transform: translateX(-70px);
+    background-color:#a55eea;
     color: white;
     font-size: 16px;
     font-weight: 400;
     display: inline-block;
     width: 120px;
    height: 30px;
+   padding: 2px;
     border-radius: 3rem;
     pointer-events: none;
     transition: transform 0.5s, opacity 0.5s;

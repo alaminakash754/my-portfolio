@@ -3,20 +3,21 @@ import { useState } from 'react';
 import '../style/style.css';
 // import logo fom '../assets/logo.jpg'
 const Navbar = () => {
-//     const navLink = document.querySelectorAll('.nav__link')
 
-// function linkColor(){
-//     navLink.forEach(link => link.classList.remove('active-link'))
-//     this.classList.add('active-link')
-// }
-// navLink.forEach(link => link.addEventListener('click', linkColor))
+    //     const navLink = document.querySelectorAll('.nav__link')
 
-const [activeLink, setActiveLink] = useState(null);
+    // function linkColor(){
+    //     navLink.forEach(link => link.classList.remove('active-link'))
+    //     this.classList.add('active-link')
+    // }
+    // navLink.forEach(link => link.addEventListener('click', linkColor))
 
-  const linkColor = (event) => {
-    const clickedLink = event.target;
-    setActiveLink(clickedLink);
-  };
+    // const [activeLink, setActiveLink] = useState(null);
+
+    // const linkColor = (event) => {
+    //     const clickedLink = event.target;
+    //     setActiveLink(clickedLink);
+    // };
 
 
     // const navLinks = <>
@@ -38,6 +39,11 @@ const [activeLink, setActiveLink] = useState(null);
     //         }>Contact</NavLink></li>
 
     // </>
+    const [activeLink, setActiveLink] = useState(null);
+
+    const handleLinkClick = (index) => {
+        setActiveLink(index);
+    };
     return (
         // <div className="navbar bg-base-200 max-w-[1160px] mx-auto">
         //     <div className="navbar-start">
@@ -69,19 +75,25 @@ const [activeLink, setActiveLink] = useState(null);
         // </div>
         <nav className="nav">
             <ul className="nav__list">
-                <a href="/" className="nav__link active-link">
 
-                    <span className="nav__name">Home</span>
-                    <ion-icon name="home-outline"></ion-icon>
-                </a>
 
-                <a href="about"  className="nav__link active-link">
+               
+                    <a href="/" className={activeLink === 0 ? 'nav__link active-link ' : ''} >
 
-                    <span className="nav__name">More About me</span>
-                    <ion-icon name="receipt-outline"></ion-icon>
-                </a>
+                        <span className="nav__name" onClick={() => handleLinkClick(0)}>Home</span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+               
 
-                <a href="contact" className={`nav__link ${activeLink === 2 ? 'active-link' : ''}`} onClick={linkColor}>
+               
+                    <a href="about" className={activeLink === 1 ? 'nav__link active-link' : ''} >
+
+                        <span className="nav__name" onClick={() => handleLinkClick(1)}>More About me</span>
+                        <ion-icon name="receipt-outline"></ion-icon>
+                    </a>
+               
+
+                <a href="contact" className="nav__link ">
 
 
                     <span className="nav__name">Contact</span>
@@ -96,7 +108,7 @@ const [activeLink, setActiveLink] = useState(null);
 
             </ul>
 
-            
+
         </nav>
 
     );
