@@ -1,4 +1,5 @@
 // import { NavLink } from 'react-router-dom';
+
 import { useState } from 'react';
 import '../style/style.css';
 // import logo fom '../assets/logo.jpg'
@@ -39,11 +40,13 @@ const Navbar = () => {
     //         }>Contact</NavLink></li>
 
     // </>
-    const [activeLink, setActiveLink] = useState(null);
+    const [activeItem, setActiveItem] = useState(null);
 
-    const handleLinkClick = (index) => {
-        setActiveLink(index);
-    };
+  const handleItemClick = (itemName) => {
+    setActiveItem(itemName);
+    console.log(itemName);
+  };
+
     return (
         // <div className="navbar bg-base-200 max-w-[1160px] mx-auto">
         //     <div className="navbar-start">
@@ -75,32 +78,21 @@ const Navbar = () => {
         // </div>
         <nav className="nav">
             <ul className="nav__list">
+                <a href="/" className={`nav__link ${activeItem === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')}>
 
-
-               
-                    <a href="/" className={activeLink === 0 ? 'nav__link active-link ' : ''} >
-
-                        <span className="nav__name" onClick={() => handleLinkClick(0)}>Home</span>
-                        <ion-icon name="home-outline"></ion-icon>
-                    </a>
-               
-
-               
-                    <a href="about" className={activeLink === 1 ? 'nav__link active-link' : ''} >
-
-                        <span className="nav__name" onClick={() => handleLinkClick(1)}>More About me</span>
-                        <ion-icon name="receipt-outline"></ion-icon>
-                    </a>
-               
-
-                <a href="contact" className="nav__link ">
-
-
+                    <span className="nav__name" >Home</span>
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+                <a href="about"  className={`nav__link ${activeItem === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')}>
+                    <span className="nav__name" >More About me</span>
+                    <ion-icon name="receipt-outline"></ion-icon>
+                </a>
+                <a href="contact" className={`nav__link ${activeItem === 'contact' ? 'active' : ''}`} onClick={() => handleItemClick('contact')}>
                     <span className="nav__name">Contact</span>
                     <ion-icon name="mail-unread-outline"></ion-icon>
                 </a>
 
-                <a href="projects" className="nav__link">
+                <a href="projects"className={`nav__link ${activeItem === 'projects' ? 'active' : ''}`} onClick={() => handleItemClick('projects')}>
 
                     <span className="nav__name">My Projects</span>
                     <ion-icon name="medkit-outline"></ion-icon>

@@ -7,7 +7,7 @@ const Skill = () => {
         <div className="bg-base-200 mt-12 w-[650px]">
             <h2 className="uppercase text-center text-4xl font-semibold text-[#a55eea] my-7 mt-3">My Skill</h2>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="border-2 border-green-800 p-3 rounded-lg">
+                <div className="border-2 border-purple-800 p-3 rounded-lg">
                     <div className="flex items-center gap-3">
                         <h2 className="text-2xl font-medium">React JS </h2> <FaReact className="text-xl"></FaReact>
                     </div>
@@ -37,7 +37,7 @@ const Skill = () => {
                         <p>80%</p>
                     </div>
                 </div>
-                <div className="border-2 border-green-800 p-3 rounded-lg">
+                <div className="border-2 border-purple-800 p-3 rounded-lg">
                     <div className="flex items-center gap-3">
                         <h2 className="text-xl font-medium">Tailwind CSS</h2> <BiLogoTailwindCss className="text-2xl"></BiLogoTailwindCss>
                     </div>

@@ -185,12 +185,12 @@ main {
     opacity: 0;
     text-align: center;
   }
-  .active-link {
+  .active {
     background-color: white;
   }
   
 
 
   .active-link i {
-    color: blue;
+    color: red;
   }
