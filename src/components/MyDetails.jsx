@@ -14,15 +14,16 @@ const MyDetails = () => {
       </h1>
 
       <p className="mt-10 text-justify font-semibold text-lg">
-        Welcome to my portfolio! I specialize in crafting immersive user
-        experiences as a full-stack developer. With expertise in HTML, CSS, and
-        JavaScript, along with frameworks like React and Vite, I create visually
-        stunning interfaces. Recently, I've expanded my skills to include
-        Node.js and Express.js for backend development, alongside MongoDB for
-        database management. I also leverage TypeScript for enhanced code
-        quality. My goal is to deliver seamless experiences that not only look
-        great but also function flawlessly. Let's build something amazing
-        together!
+        Welcome to my portfolio! As a proficient MERN stack developer, I
+        specialize in building dynamic and responsive web applications. With
+        expertise in React.js, JavaScript, and various React component
+        libraries, I create seamless user interfaces that enhance user
+        experience. My backend skills in Node.js and Express.js, coupled with
+        MongoDB for database management, allow me to develop robust and scalable
+        server-side solutions. I am adept at integrating animations with AOS to
+        add visual appeal. My comprehensive knowledge of both frontend and
+        backend development, along with a keen eye for UI design, enables me to
+        deliver complete, efficient, and engaging web solutions.
       </p>
 
       <Link to="about">
